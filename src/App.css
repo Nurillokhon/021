@@ -14,14 +14,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -35,4 +35,240 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.col-3{
+  background: #325ECD;
+  height: auto;
+  position: relative;
+}
+button{
+  width: 100%;
+  height: 70px !important;
+  background: #325ECD;
+  border: none !important;
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 105.4%;
+text-align: center;
+color: #FFFFFF;
+}
+.buttonlar{
+  position: absolute;
+top: 100px;
+left: 0;
+}
+input{
+  background: #EAF0FF !important;
+border-radius: 100px !important;
+}
+
+Link
+{
+  color: white ;
+}
+.card1{
+  font-family: 'Nunito';
+  width: 70px;
+  height: 90px !important;
+font-style: normal;
+font-weight: 300;
+font-size: 10px !important;
+line-height: 15px !important;
+color: #393636;
+background:  #EAF0FF !important;
+border: 1px solid #D3E0FF !important ;
+border-radius: 30px !important;
+}
+
+.quti{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFFFFF;
+border: 1px solid #D3E0FF;
+border-radius: 40px
+}
+
+.quti h1{
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 70px;
+line-height: 95px;
+letter-spacing: 8px;
+
+color: #325ECD;
+}
+.qut{
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.card2 h2{
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 20px !important;
+line-height: 105.4%;
+color: #000000;
+position: relative;
+right: 50px;
+}
+.card2 img{
+  width: 40px;
+  position: relative;
+  bottom: 30px;
+  margin-left: 200px;
+}
+
+.card2 h1{
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 55px;
+line-height: 105.4%;
+
+color: #000000;
+
+}
+.card2 a{
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+text-align: right;
+text-decoration-line: underline;
+color: #325ECD;
+}
+.card2{
+  background: #FFFFFF;
+border: 1px solid #D3E0FF;
+border-radius: 30px !important;
+margin: 10px;
+}
+.card2 h6{
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 19px;
+
+color: #6AD2A0;
+}
+.box1{
+  position: relative;
+  top: 40px;
+}
+
+.box{
+  position: relative;
+    left: 100px;
+}
+
+.in{
+  position: relative;
+    left: 100px;
+}
+
+
+
+.second button{
+  width: 100%;
+  height: 70px !important;
+  background: #325ECD;
+  border: none !important;
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 105.4%;
+text-align: center;
+color: #FFFFFF;
+}
+
+.but{
+  background-color: white;
+  color: #325ECD;
+}
+
+.butt{
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 600;
+font-size: 18px !important;
+line-height: 105.4%;
+text-align: center;
+color: #FFFFFF;
+}
+
+.butt1{
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 400;
+font-size: 16px !important;
+line-height: 105.4%;
+color: #325ECD !important;
+background-color: #FFFFFF !important;
+}
+
+.second{
+  height: auto !important;
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 105.4%;
+color: #FFFFFF;
+}
+
+.boxcha{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.boxcha button{
+  background: #325ECD;
+border-radius: 20px;
+height: 40px !important;
+width: 180px;
+}
+thead{
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 30px;
+color: #000000;
+}
+
+
+
+tbody tr{
+  width: 100%;
+  font-family: 'Nunito';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+color: #000000;
+mix-blend-mode: normal;
+}
+
+.tr1{
+  width: 100% !important;
+  height: 60px;
+  background: #FFFFFF;
+border: 1px solid #D3E0FF !important;
+border-radius: 20px !important;
+margin: 10px 0;
+
 }

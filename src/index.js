@@ -2,13 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import 'bootstrap/dist/css/bootstrap.min.css'
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import All from './componets/All';
+import User from './componets/user';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+  <BrowserRouter>
+  <Routes>
+    <Route path='/' element={<App/>}/>
+      <Route path='/all' element={<All/>}/>
+      <Route path='/user' element={<User/>}/>
+  </Routes>
+  </BrowserRouter>
   </React.StrictMode>
 );
 

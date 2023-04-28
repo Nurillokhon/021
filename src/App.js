@@ -1,12 +1,12 @@
 import './App.css';
-import Nimdir from './componets/Nimdir';
 import Sabina from './componets/Sabina'
+import { Outlet } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Nimdir/>
         <Sabina/>
+        <Outlet/>
       </header>
     </div>
   );
