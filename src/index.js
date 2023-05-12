@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
-import All from './componets/All';
 import User from './componets/user';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.esm'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,7 +15,6 @@ root.render(
   <BrowserRouter>
   <Routes>
     <Route path='/' element={<App/>}/>
-      <Route path='/all' element={<All/>}/>
       <Route path='/user' element={<User/>}/>
   </Routes>
   </BrowserRouter>

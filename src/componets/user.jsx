@@ -1,88 +1,66 @@
-import React,{ useEffect, useState } from "react";
-import { BsHouse } from 'react-icons/bs';
-import { FaUserPlus } from "react-icons/fa";
-import { FaHeadset } from "react-icons/fa";
-import { TbAlignBoxRightTop } from "react-icons/tb";
-import { ImCog } from "react-icons/im";
-import { ImBell } from "react-icons/im";
-import { ImUser } from "react-icons/im";
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+// import axios from 'axios';
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
 
 const User = () => {
-    const [mas, setMas] = useState([]);
-    useEffect(() => {
-        axios.get('https://api.npoint.io/45e6264d5b437ebadbd1')
-            .then((ress) => {
-                console.log(ress.data);
-                setMas(ress.data)
-            })
-            .catch((e) => {
-                console.log(e);
-            })
-    }, []);
-    return (
-        <div className="container">
-            <div className="row">
-                <div className="col-3 d-block second">
-                    <div className="buttonlar">
-                    <button><BsHouse />Statistika</button>
-                    <button className="but"><ImCog />Amallar</button>
-                    <button className="butt">Push jonatish</button>
-                    <button className="butt1">Foydalanuvchi siyosati</button>
-                    <button><FaUserPlus />Ruxsatlar</button>
-                    <button><TbAlignBoxRightTop />Hisobotlar</button>
-                    <button><FaHeadset />Call-markaz</button>
-                    </div>
+  const state = useLocation()
+  const [count, setCount] = useState(0);
+  // const [total, setTotal] = useState(150);
+  let arr = state.state
+  const [ arr1 ,setarr1] = useState(arr)
+
+  const handleIncrement = (i) => {
+    let cur = [...arr1]
+    cur[i].qty = cur[i].qty +1
+    setarr1(cur)
+    // console.log(cur);
+  }
+
+  const handleDecrement = (i) => {
+    let cur = [...arr1]
+    cur[i].qty = cur[i].qty -1
+    if(cur[i].qty < 0) {
+      cur.splice(i, 1)
+    }
+    setarr1(cur)
+ }
+
+  return (
+    <div className='row row1'>
+                  <div>
+                <div class="input-group flex-nowrap inp">
+                    <input type="search" className="form-control " placeholder="Пoиск" aria-label="Username" aria-describedby="addon-wrapping"  />
                 </div>
-
-                <div className="col-9">
-
-                    <div class="input-group flex-nowrap w-75 m-4 in">
-                        <input type="search" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="addon-wrapping  " />
-                        <ImBell />
-                        <ImUser />
-                    </div>
-
-                    <div><h2>Id orqali qidirish</h2></div>
-                    <div className="d-flex boxcha">
-                        <input type="search" placeholder="ID" />
-                        <button className="btn btn-primary">Qoshish</button>
-                    </div>
-
-
-                    <div>
-                        <table className="table">
-                            <thead>
-                               <tr>
-                               <td>ID</td>
-                                <td>User</td>
-                                <td>Telefon</td>
-                                <td>JShShIR</td>
-                                <td>Qurilma</td>
-                               </tr>
-                            </thead>
-                            <tbody>
-                               {
-                                (mas) && mas.map((item,index)=>{
-                                    return(
-                                            <tr className="tr1">
-                                            <td>{item.id}</td>
-                                            <td>{item.name}</td>
-                                            <td>{item.stir}</td>
-                                            <td>{item.device}</td>
-                                            <td>{item.number}</td>
-                                        </tr>
-                                    )
-                                })
-                               }
-                            </tbody>
-                        </table>
-                    </div>
-
                 </div>
-            </div>
-        </div>
-    )
+      <Link to='/'>
+      <div>
+        <h1>Назадь</h1>
+      </div>
+      </Link>
+      {
+        (arr1).map((item,index)=>{
+               return(
+               <div className='col-10'>
+                  <div className='card kard'>
+                  <img   src={item.url} alt="" />
+                             <h2>{item.narxi  * item.qty}</h2>
+                             <h2>{item.count}</h2>
+                             <h2>{item.name}</h2>
+                             <div className="d-flex buttonlar">
+                             <button  onClick={()=>handleIncrement(index)} className="btn btn-success">+</button>
+                             <h4>{item.qty}</h4>
+                             <button onClick={()=>handleDecrement(index)} className="btn btn-danger">-</button>
+                             </div>
+                  </div>
+               </div>
+               )
+        })
+      }
+    </div>
+  );
 }
+
 
 export default User;

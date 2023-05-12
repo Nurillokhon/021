@@ -16,16 +16,12 @@
 .App-header {
   background: white;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
 }
 
 .App-link {
-  color: #61dafb;
+  color: white;
 }
 
 @keyframes App-logo-spin {
@@ -37,238 +33,200 @@
   }
 }
 
-.col-3{
-  background: #325ECD;
-  height: auto;
-  position: relative;
-}
-button{
-  width: 100%;
-  height: 70px !important;
-  background: #325ECD;
-  border: none !important;
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 105.4%;
-text-align: center;
-color: #FFFFFF;
-}
-.buttonlar{
-  position: absolute;
-top: 100px;
-left: 0;
-}
-input{
-  background: #EAF0FF !important;
-border-radius: 100px !important;
-}
 
-Link
-{
-  color: white ;
-}
+
+.cardlar{
+  display: flex;
+  flex-wrap: wrap;}
 .card1{
-  font-family: 'Nunito';
-  width: 70px;
-  height: 90px !important;
-font-style: normal;
-font-weight: 300;
-font-size: 10px !important;
-line-height: 15px !important;
-color: #393636;
-background:  #EAF0FF !important;
-border: 1px solid #D3E0FF !important ;
-border-radius: 30px !important;
+  width: 250px;
 }
 
-.quti{
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.col-4{
   background: #FFFFFF;
-border: 1px solid #D3E0FF;
-border-radius: 40px
+box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+width: 350px !important;
+height: 60px !important;
+margin:  20px 40px;
 }
 
-.quti h1{
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 70px;
-line-height: 95px;
-letter-spacing: 8px;
-
-color: #325ECD;
+.col-4 img{
+  width: 30px !important;
+  height: 30px;
+  margin-top: 7px;
 }
-.qut{
-  height: 70px;
-  display: flex;
-  align-items: center;
-}
-
-.card2 h2{
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 20px !important;
-line-height: 105.4%;
-color: #000000;
-position: relative;
-right: 50px;
-}
-.card2 img{
-  width: 40px;
-  position: relative;
-  bottom: 30px;
-  margin-left: 200px;
-}
-
-.card2 h1{
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 55px;
-line-height: 105.4%;
-
-color: #000000;
-
-}
-.card2 a{
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 22px;
-text-align: right;
-text-decoration-line: underline;
-color: #325ECD;
-}
-.card2{
-  background: #FFFFFF;
-border: 1px solid #D3E0FF;
-border-radius: 30px !important;
-margin: 10px;
-}
-.card2 h6{
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 19px;
-
-color: #6AD2A0;
-}
-.box1{
-  position: relative;
-  top: 40px;
-}
-
-.box{
-  position: relative;
-    left: 100px;
-}
-
-.in{
-  position: relative;
-    left: 100px;
-}
-
-
-
-.second button{
-  width: 100%;
-  height: 70px !important;
-  background: #325ECD;
-  border: none !important;
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 25px;
-line-height: 105.4%;
-text-align: center;
-color: #FFFFFF;
-}
-
-.but{
-  background-color: white;
-  color: #325ECD;
-}
-
-.butt{
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 600;
-font-size: 18px !important;
-line-height: 105.4%;
-text-align: center;
-color: #FFFFFF;
-}
-
-.butt1{
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 400;
-font-size: 16px !important;
-line-height: 105.4%;
-color: #325ECD !important;
-background-color: #FFFFFF !important;
-}
-
-.second{
-  height: auto !important;
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 105.4%;
-color: #FFFFFF;
-}
-
-.boxcha{
-  width: 100%;
-  height: 70px;
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-}
-
-.boxcha button{
-  background: #325ECD;
-border-radius: 20px;
-height: 40px !important;
-width: 180px;
-}
-thead{
-  font-family: 'Nunito';
-font-style: normal;
-font-weight: 800;
-font-size: 20px;
-line-height: 30px;
-color: #000000;
-}
-
-
-
-tbody tr{
-  width: 100%;
-  font-family: 'Nunito';
+.col-4 h2{
+  font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
+font-size: 20px;
+line-height: 16px;
+display: flex;
+align-items: center;
+color: #181818;
+text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+margin-left: 15px;
+}
+
+.box h1{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 35px;
+line-height: 16px;
+text-align: center;
+color: #056A1C;
+}
+
+.card1{
+  width: 180px;
+  height: 300px;
+  margin: 30px 30px;
+}
+
+.cardlar .card{
+  width: 200px;
+  height: 250px !important;
+}
+
+.cardlar .card h2{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
 font-size: 16px;
-line-height: 22px;
+line-height: 16px;
+/* or 133% */
+
+display: flex;
+align-items: center;
+
 color: #000000;
-mix-blend-mode: normal;
+}
+.cardlar .card img{
+  width: 200px;
+  height: 200px !important;
 }
 
-.tr1{
-  width: 100% !important;
-  height: 60px;
+.img{
+  margin-left: 120px;
+ position: relative;
+ bottom: 50px;
+}
+
+.card1 button{
+  background: #056A1C;
+border: 1px solid #FFFFFF;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+border-radius: 6px;
+height: 40px !important;
+width: 140px;
+margin-top: 10px;
+}
+
+.card1 button h2{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 16px;
+text-align: center;
+color: #FFFFFF;
+}
+.text h2{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 20px;
+line-height: 16px;
+display: flex;
+align-items: center;
+color: #056A1C;
+}
+.box1{
+  height: 350px;
+}
+
+.box1 .box{
+  margin-top: 50px;
+}
+
+.box2{
+  height: 500px !important;
+  position: relative;
+  top: 220px;
+}
+
+.imglar{
+  width: 100px;
+  height: 100px;
+  margin:  0 30px;
+  border-radius: 50%;
+}
+
+input{
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.623);
+
+}
+ .inp{
+  margin: 30px 0;
+ }
+
+ .rasm{
+  margin-top: 40px;
+ }
+
+ .savat{
+  margin-left: 15px;
+ }
+
+ .col-10{
+  margin: 50px 0 !important;
+  
+
+ }
+ .col-10 .card{
   background: #FFFFFF;
-border: 1px solid #D3E0FF !important;
-border-radius: 20px !important;
-margin: 10px 0;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 5px;
+ }
 
-}
+ .kard img{
+  width: 400px;
+  height: 300px;
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius: 10px;
+ }
+
+ .kard h2{
+  text-align: center;
+  position: relative;
+  bottom: 220px;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 16px;
+color: #000000;
+
+ }
+
+ .row1{
+  display: flex;
+  justify-content: center;
+ }
+ .col-10 button{
+  width: 80px;
+ }
+ .buttonlar{
+  /* margin-left: 600px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 200px;
+ }
+ .buttonlar button{
+  margin: 0 10px;
+ }
