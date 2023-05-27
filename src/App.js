@@ -11,5 +11,6 @@ function App() {
     </div>
   );
 }
-
+// git branch name => branch yartish uchun 
+// git branch -a => xamma branchlarni korish  uchun 
 export default App;
